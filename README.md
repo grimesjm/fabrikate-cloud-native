@@ -38,6 +38,8 @@ fab generate prod
 kubectl apply --recursive -f . 
 ```
 
+
+###Untested
 Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a domain to control and run `certs/apply.sh`
 
 
@@ -45,6 +47,7 @@ Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a do
 
 Set `slack-hook-url` for Kured set this in config/prod.yaml and/or config/dev.yaml
 Set email for cert-manager - set in config/common.yaml
+
 
 
 ### Does not work yet, need a newer version of the Kured container 
