@@ -18,6 +18,21 @@ It includes:
 
 ### Service Mesh (via [fabrikate-istio](https://github.com/evanlouie/fabrikate-istio))
 -   [Istio](https://istio.io/): Connect, secure, control, and observe services.
+-   [CertManager](https://docs.cert-manager.io/en/latest/#): For retrieving SSL certs
 
 ### Distributed Tracing (via [fabrikate-jaeger](https://github.com/bnookala/fabrikate-jaeger))
 -   [Jaeger](https://www.jaegertracing.io/): Distributed transaction, latency, and dependency tracing
+
+
+
+## Running
+
+```
+mkdir -p fabrikated && cd fabrikated
+fab add cloud-native --source https://github.com/grimesjm/fabrikate-cloud-native
+fab install
+fab generate prod
+kubectl apply --recursive -f . 
+```
+
+Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a domain to control and run `certs/apply.sh`

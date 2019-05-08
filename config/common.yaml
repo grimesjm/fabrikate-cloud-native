@@ -8,6 +8,15 @@ subcomponents:
   istio:
     config:
       namespace: istio-system # this is created by the Istio component
+      certmanager: 
+        enabled: true
+        email: "replaceme"
+      k8sIngress: 
+        enabled: true
+        gatewayName: ingressgateway
+        enableHttps: true
+      istiocoredns:
+        enabled: true
       tracing:
         enabled: false # Provided by Jaeger
       global:
