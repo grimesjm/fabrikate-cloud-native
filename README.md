@@ -63,3 +63,11 @@ If you have any one off pods such as Jobs or Cronjobs that are expensive in CPU 
 ```
 
 This will prevent us from rebooting a recently patched node while the pod is running. 
+
+
+### TODO
+
+* Run kube-bench
+* Set pod security policies
+* Verify PV/PVC's
+* Feed prometheus alert-manager slack config
