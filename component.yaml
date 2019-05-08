@@ -17,3 +17,4 @@ subcomponents:
   - name: "jaeger"
     source: "https://github.com/bnookala/fabrikate-jaeger"
     method: "git"
+

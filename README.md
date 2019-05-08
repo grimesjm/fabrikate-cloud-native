@@ -25,6 +25,9 @@ It includes:
 
 
 
+
+
+
 ## Running
 
 ```
@@ -40,6 +43,11 @@ Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a do
 
 ### Notes
 
+Set `slack-hook-url` for Kured set this in config/prod.yaml and/or config/dev.yaml
+Set email for cert-manager - set in config/common.yaml
+
+
+### Does not work yet, need a newer version of the Kured container 
 If you have any one off pods such as Jobs or Cronjobs that are expensive in CPU or time, Add the following selectors to the pod:
 
 ```
