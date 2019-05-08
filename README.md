@@ -34,7 +34,7 @@ It includes:
 mkdir -p fabrikated && cd fabrikated
 fab add cloud-native --source https://github.com/grimesjm/fabrikate-cloud-native
 fab install
-fab generate prod
+fab generate prod aws
 kubectl apply --recursive -f . 
 ```
 
