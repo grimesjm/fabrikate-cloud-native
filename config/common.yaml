@@ -4,6 +4,7 @@ subcomponents:
     config:
       extraArgs:
         prometheus-url: http://prometheus-server.prometheus.svc.cluster.local
+        blocking-pod-selector: "runtime=long,cost=expensive"
 
   istio:
     config:

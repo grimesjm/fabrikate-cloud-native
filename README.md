@@ -36,3 +36,19 @@ kubectl apply --recursive -f .
 ```
 
 Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a domain to control and run `certs/apply.sh`
+
+
+### Notes
+
+If you have any one off pods such as Jobs or Cronjobs that are expensive in CPU or time, Add the following selectors to the pod:
+
+```
+"metadata": {
+  "labels": {
+    "runtime" : "long",
+    "cost" : "expensive"
+  }
+}
+```
+
+This will prevent us from rebooting a recently patched node while the pod is running. 
