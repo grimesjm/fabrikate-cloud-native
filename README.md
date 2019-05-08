@@ -39,7 +39,7 @@ kubectl apply --recursive -f .
 ```
 
 
-###Untested
+### Untested
 Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a domain to control and run `certs/apply.sh`
 
 
