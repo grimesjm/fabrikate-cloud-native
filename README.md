@@ -45,8 +45,8 @@ Set `NAME` and `INGRESS_DOMAIN` to give the certificate resource a name and a do
 
 ### Notes
 
-Set `slack-hook-url` for Kured set this in config/prod.yaml and/or config/dev.yaml
-Set email for cert-manager - set in config/common.yaml
+* Set `slack-hook-url` for Kured set this in config/prod.yaml and/or config/dev.yaml
+* Set email for cert-manager - set in config/common.yaml
 
 
 
